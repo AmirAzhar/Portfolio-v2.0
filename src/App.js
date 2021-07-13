@@ -10,6 +10,7 @@ import { Scrollbar } from "react-scrollbars-custom";
 
 // Import components
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 // Import screens
 import Contact from "./screens/Contact";
@@ -30,23 +31,16 @@ function App() {
       >
         <Router>
           <div className="pageContainer">
-            <nav>
-              <Navigation />
-            </nav>
+            <Navigation />
             <Switch>
-              <Route path="/portfolio">
-                <Portfolio className="contentWrap" />
-              </Route>
-              <Route path="/contact">
-                <Contact className="contentWrap" />
-              </Route>
-              {/* <Route path="/">
-                <About className="contentWrap" />
-              </Route> */}
-              <Route path="/">
-                <Home className="contentWrap" />
-              </Route>
+
+              <Route path="/portfolio" component={Portfolio} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/home" component={About} />
+              <Route path="/" component={About} />
+
             </Switch>
+            <Footer />
           </div>
         </Router>
       </Scrollbar>

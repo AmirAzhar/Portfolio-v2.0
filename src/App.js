@@ -33,12 +33,10 @@ function App() {
           <div className="pageContainer">
             <Navigation />
             <Switch>
-
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
-              <Route path="/home" component={About} />
-              <Route path="/" component={About} />
-
+              <Route path="/about" component={About} />
+              <Route path="/" component={Home} />
             </Switch>
             <Footer />
           </div>

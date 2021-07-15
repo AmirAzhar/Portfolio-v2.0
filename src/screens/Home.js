@@ -32,8 +32,8 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <h1 className="fadeOut">Hello</h1>
-      <h1 className="fadeIn">I'm Amir</h1>
+      <div className="fadeOut">Hello</div>
+      <div className="fadeIn">I'm Amir</div>
     </div>
   );
 };
